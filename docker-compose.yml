@@ -1,0 +1,12 @@
+---
+version: "3.9"
+
+services:
+  hugo:
+    restart: always
+    image: ghcr.io/oldtyt/hugo-docker
+    environment:
+      BASEURL: http://localhost/
+    volumes:
+      - .app:/app
+      

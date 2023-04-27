@@ -10,7 +10,7 @@ RUN apk add --no-cache hugo curl nginx && chmod +x /entrypoint.sh
 
 COPY nginx.conf /etc/nginx/nginx.conf
 
-HEALTHCHECK --interval=5s --timeout=10s --retries=3 CMD curl -sS 127.0.0.1:80 || exit 1
+HEALTHCHECK --interval=5s --timeout=10s --retries=3 CMD curl -sS 127.0.0.1:80 | grep 200 || exit 1
 
 WORKDIR /app
 

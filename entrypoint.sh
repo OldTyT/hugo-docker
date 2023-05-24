@@ -1,2 +1,3 @@
 #!/bin/sh
-hugo server --port 80 --bind 0.0.0.0 -e production --baseURL=$BASEURL
+hugo  --destination=/hugo_out --baseURL=$BASEURL
+nginx -g 'daemon off;'

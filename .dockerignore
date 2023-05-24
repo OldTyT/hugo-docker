@@ -1,0 +1,6 @@
+.github
+.github/
+docker-compose.yml
+CHANGELOG.md
+.git
+.git/

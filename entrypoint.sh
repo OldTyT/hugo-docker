@@ -1,3 +1,2 @@
 #!/bin/sh
-hugo  --destination=/hugo_out --baseURL=$BASEURL
-nginx -g 'daemon off;'
+hugo --port 80 --baseURL=$BASEURL

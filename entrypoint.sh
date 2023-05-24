@@ -1,2 +1,2 @@
 #!/bin/sh
-hugo --port 80 --baseURL=$BASEURL
+hugo server --port 80 --baseURL=$BASEURL

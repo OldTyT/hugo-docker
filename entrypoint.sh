@@ -16,4 +16,5 @@ git add . && \
 git config --global user.email "nezlobin118@gmail.com" && \
 git config --global user.name "OldTyT" && \
 git commit -m "chore: auto generate" && \
+git remote set-url origin "$GIT_REPO_SSH" && \
 git push origin pages

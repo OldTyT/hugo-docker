@@ -6,6 +6,9 @@ echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> /root/.ssh/config && 
 echo -e "Host gitlab.com\n\tStrictHostKeyChecking no\n" >> /root/.ssh/config && \
 mkdir /pages && \
 hugo  --destination=/pages --baseURL=$BASEURL && \
+git remote set-branches --add 'origin' 'pages' && \
+git fetch 'origin' && \
+git checkout --track 'origin/pages' && \
 git switch pages && \
 mv .git /pages && \
 cd /pages && \

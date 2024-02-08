@@ -1,6 +1,6 @@
 #!/bin/sh
 mkdir public
-hugo  --destination=public --baseURL=$BASEURL
+hugo  --destination=public #--baseURL=$BASEURL
 # mkdir -p ~/.ssh &&
 # echo "$SSH_KEY_PRIVATE" > ~/.ssh/id_rsa && \
 # chmod 600 /root/.ssh/id_rsa && \
